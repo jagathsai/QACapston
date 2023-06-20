@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+  <test thread-count="5" name="chrome">
+    <parameter name="Port" value="5555"></parameter>
+    <parameter name="browser" value="chrome" />
+    <classes>
+      <class name="CapstoneProject.automationexercise.RegisterUserTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="firefox">
+    <parameter name="Port" value="6666"></parameter>
+    <parameter name="browser" value="firefox" />
+    <classes>
+
+      <class name="CapstoneProject.automationexercise.AddReviewTest"/>
+
+    </classes>
+  </test> <!-- Test -->  
+</suite> <!-- Suite -->

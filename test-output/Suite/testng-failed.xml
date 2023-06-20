@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="chrome(failed)">
+    <parameter name="Port" value="5555"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="CapstoneProject.automationexercise.RegisterUserTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testAutomationFlow"/>
+          <include name="testAccountCreation"/>
+        </methods>
+      </class> <!-- CapstoneProject.automationexercise.RegisterUserTest -->
+    </classes>
+  </test> <!-- chrome(failed) -->
+  <test thread-count="5" parallel="tests" name="firefox(failed)">
+    <parameter name="Port" value="6666"/>
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="CapstoneProject.automationexercise.AddReviewTest">
+        <methods>
+          <include name="testWriteReview"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- CapstoneProject.automationexercise.AddReviewTest -->
+    </classes>
+  </test> <!-- firefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->
